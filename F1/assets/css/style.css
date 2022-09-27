@@ -1,0 +1,728 @@
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+html{
+	scroll-behavior: smooth;
+}
+#nav{
+	background-color: red;
+	height: 75px;
+}
+#nav .nav_img{  
+	float: left;	
+}
+#nav .nav_img img{
+ 	height: 50px;
+ 	width: auto;
+ 	margin-top: 12px;
+}
+#nav .main_nav{
+	text-align: right;
+	height: 50px;
+	margin-right: -87px;
+}
+#nav .main_nav li {
+	list-style: none;
+	height: 100%;
+}
+#nav .main_nav li ul {
+	display: inline-block;
+	width: auto;
+	height: 150%;
+	width: auto;
+	padding-top: 25px;
+	transition: 0.5s;
+	margin-left: -5px;
+	padding-left: 5px; 
+}
+#nav .main_nav li ul a {
+	font-size: 21px;
+	list-style: none;
+	position: relative;	
+	text-decoration: none;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 50px;
+}
+#nav .main_nav li ul:hover{
+	background: #0b1429;
+	color: white;
+}
+#nav .main_nav li a{
+	height: 100%;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+/* menu */
+#dropdown {
+	height: 560px;
+	background: #0b1429;
+	display: none;
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+}
+#dropdown .news_text{
+	display: inline-block;
+	height: 30px;
+	width: 70px;
+	font-size: 25px;
+	margin-left: 0px;
+	margin-top: 25px;
+}
+#dropdown .news_text a{
+	text-decoration: none;
+	color: white;
+	transition: 0.3s;
+	border: 2px solid #0b1429;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	text-align: right;
+}
+#dropdown .news_text a:hover{
+	border-bottom: 2px solid red;
+	border-right: 2px solid red;
+	border-radius: 5px;
+}
+#dropdown .news .article_line{
+	padding-top: 30px;
+	padding-left: 40px;
+}
+#dropdown .news .article_line li{
+	list-style: none;
+}
+#dropdown .news .article_line li ul{
+	display: inline-block;
+	color: white;
+	width: 200px;
+	margin-right: 55px;
+}
+#dropdown .news img{
+	width: 225px;
+	height: 126.56px;
+
+}
+#dropdown .news a{
+	list-style: none;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+/* info */
+
+#info {
+	background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/bg1.jpg);
+	background-position: center;
+	height: 550px;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: static;
+    z-index: 0;
+}
+#info li{
+	list-style: none;
+}
+#info li ul h1{
+	text-align: center;
+}
+#info li ul p{
+	padding-left: 15px;
+	font-size: 18px;
+}
+/* news slider */
+#news_sect {
+	border-top: 7.5px solid red;
+	display: block;
+	width: 100%;
+	position: static;
+	top: 475px;
+}
+#news_sect .title h1{
+	text-align: center;
+	padding-top: 10px;
+}
+#news_sect .slider {
+  width: 550px;
+  position: relative;
+  left: -9px;
+}
+#news_sect .slider-cont {
+  width: 100%;
+  height: 720px;
+  position: relative;
+  float: left;
+}
+#news_sect .slider-cont a img{
+	top: 30px;
+	right: -570px;	
+	height: 640px;
+	position: absolute;
+	width: 1137.78px;
+ 	display: block;
+ 	z-index: 0;
+}
+#news_sect .slider-cont a{
+  transition: 1s;
+  border-radius: 5px;
+  z-index: 0;
+  opacity: 0;
+}
+#news_sect .slider-cont .active {
+  opacity: 1;
+  z-index: 5;
+}
+#news_sect .slider-text a{
+  position: absolute;
+  right: -500px;
+  top: 673px;
+  text-align: center;
+  opacity: 0; 
+  color: black;
+  text-decoration: none;
+  z-index: 0;
+}
+#news_sect .slider-text a.active{
+  opacity: 1;
+  z-index: 5;
+}
+#news_sect .next1 {
+  position: absolute;
+    width: 80px;
+    z-index: 10;
+    top: 280px;
+    right: -670px;
+}
+#news_sect .prev1 {
+  position: absolute;
+    width: 80px;
+    z-index: 10;
+    top: 280px;
+    left: -120px;
+}
+#news_sect .icon {
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 1;
+}
+#news_sect .icon:hover {
+  transform: scale(1.3);
+}
+/* teams */
+#teams{
+	border-top: 7.5px solid red; 
+	display: block;
+	position: static; 
+	margin-top: 840px;
+	height: 1070px;
+	background: #0b1429;
+	color: white;
+	z-index: 1;
+}
+#teams .title h1{
+	padding-top: 10px;
+	text-align: center;
+}
+#teams .teams_rows ul {
+	list-style: none;
+	height: 100%;
+}
+#teams .teams_rows ul li{
+	display: inline-block;
+	width: auto;
+	height: 100%;
+	width: auto;
+	padding-top: 25px;
+	margin-right: 28px;
+}
+#teams .teams_rows ul li .content-logo img {
+	font-size: 21px;
+	list-style: none;
+	position: relative;	
+	text-decoration: none;
+	color: white;
+	padding-left: 5px;
+	margin-right: 25px;
+	border-bottom: 1.9px solid gray;
+	padding-bottom: 0px;
+	border-right: 1.9px solid gray;
+	padding-right: 5px;
+	border-radius: 0 0 5px 0;
+	transition: 0.5s;
+}
+#teams .teams_rows_final{
+	margin-left: 280px;
+}
+#teams .teams_rows_final ul li .content-logo img {
+	font-size: 21px;
+	list-style: none;
+	position: relative;	
+	text-decoration: none;
+	color: white;
+	padding-left: 10px;
+	margin-right: 25px;
+}
+.content-logo{
+	margin-bottom: -15px;
+}
+.cont-info{
+	top: 1990px;
+    position: absolute;
+    width: 1000px;
+    height: 565px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 0.5s;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+	opacity: 0;
+}
+.cont-info .drivers img{
+	width: 375px;
+	height: auto;
+	border-radius: 5px;
+}
+.teams_rows .show {
+	opacity: 1;
+	color: black;
+	z-index: 1;
+}
+#teams .teams_rows ul li .content-logo .alfa img:hover{
+	border-right: 1.9px solid #900000;
+	border-bottom: 1.9px solid #900000;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .alpha img:hover{
+	border-right: 1.9px solid #2b4562;
+	border-bottom: 1.9px solid #2b4562;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .alpine img:hover{
+	border-right: 1.9px solid #0091ff;
+	border-bottom: 1.9px solid #0091ff;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .aston img:hover{
+	border-right: 1.9px solid #006f62;
+	border-bottom: 1.9px solid #006f62;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .ferrari img:hover{
+	border-right: 1.9px solid red;
+	border-bottom: 1.9px solid red;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .haas img:hover{
+	border-right: 1.9px solid white;
+	border-bottom: 1.9px solid white;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .mclaren img:hover{
+	border-right: 1.9px solid #ff9900;
+	border-bottom: 1.9px solid #ff9900;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .merc img:hover{
+	border-right: 1.9px solid #00d2be;
+	border-bottom: 1.9px solid #00d2be;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .rb img:hover{
+	border-right: 1.9px solid #0600ef;
+	border-bottom: 1.9px solid #0600ef;
+	border-radius: 0 0 5px 0;
+}
+#teams .teams_rows ul li .content-logo .will img:hover{
+	border-right: 1.9px solid #005aff;
+	border-bottom: 1.9px solid #005aff;
+	border-radius: 0 0 5px 0;
+}
+
+
+/* gallery */
+
+#gallery {
+	height: 633px;
+	background: white;
+	display: block;
+	z-index: 5;
+	position: relative;
+	width: 100%;
+	border-top: 7.5px solid red;
+	background: #0b1429;
+}
+#gallery .title{
+	padding-top: 10px;
+	color: white;
+	padding-bottom: 10px;
+
+}
+#gallery .title h1{
+	padding-top: 10px;
+	text-align: center;
+}
+#gallery .slider {
+  	width: 550px;
+  	position: relative;
+  	left: -9px;
+  	z-index: 0;
+}
+
+#gallery .slider-cont {
+  	width: 100%;
+ 	height: 720px;
+  	position: relative;
+  	float: left;
+}
+
+#gallery .slider-cont a {
+	position: absolute;
+	transition: 1s;
+	z-index: 0;
+  	opacity: 0;
+	right: -950px;
+
+}
+#gallery .slider-cont a img {
+  	height: 540px;
+  	width: auto;
+}
+#gallery .slider-cont .active2 {
+  opacity: 1;
+}
+#gallery .next2 {
+  	position: absolute;
+    right: -390px;
+}
+
+#gallery .prev2 {
+  	position: absolute;
+    left: 1355px;
+}
+#gallery .icon {
+  	transition: 0.5s;
+  	cursor: pointer;
+  	opacity: 1;
+  	top: 560px;
+  	width: 60px;
+	height: 60px;
+	z-index: 4;
+}
+#gallery .icon:hover {
+  transform: scale(1.2);
+}
+
+/*filter*/
+
+#filter{
+	display: block;
+	position: relative;
+	height: 75px;
+	width: 100%;
+	background: red;
+	z-index: 5;
+}
+#filter ul {
+	list-style: none;
+	height: 100%;
+	text-align: center;
+}
+#filter ul li{
+	display: inline-block;
+	width: auto;
+	height: 100%;
+	margin-top: 22px;
+}
+#filter ul li button{
+	background: white;
+	outline: none;
+	border: none;
+	background: transparent;
+	color: white;
+	font-size: 21px;
+	margin-right: 25px;
+}
+
+/*shop*/
+#shop{
+	margin-top: 20px;
+}
+#shop .shop_row{
+	padding-top: 30px;
+	padding-left: 40px;
+}
+#shop .shop_row ul{
+	list-style: none;
+	display: none;
+}
+#shop .shop_row ul li{
+	display: inline-block;
+	margin-right: 40px;
+}
+#shop .shop_row img{
+	width: 290px;
+	height: auto;
+
+}
+#shop .shop_row a{
+	list-style: none;
+	color: black;
+	text-decoration: none;
+}
+#shop .shop_row a h5 {
+	font-weight: 300;
+}
+#shop .shop_row p{
+	margin-top: -5px;
+	font-weight: 300;
+
+}
+#shop .shop_row .show{
+	display: block;
+}
+#shop .shop_row .show1{
+	display: block;
+}
+#shop .shop_row .show2{
+	display: block;
+	margin-top: -30px;
+	margin-bottom: 46px;
+}
+#shop .shop_row .show3{
+	display: block;
+	margin-top: -60px;
+	margin-bottom: 76px;
+}
+#shop .shop_row .show4{
+	display: block;
+	margin-top: -90px;
+	margin-bottom: 106px;
+}
+/*form*/
+.danger {
+  box-shadow: 0px 0px 6px tomato;
+  border-color: red;
+}
+/* form {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  left: 25px;
+}
+form h4 {
+  text-align: center;
+}
+hr {
+  width: 50%;
+  margin: 0 auto;
+} */
+/* footer */
+footer{
+	border-top: 7.5px solid red;
+	padding-top: 25px;
+	margin-top:25px; 
+	text-align: center;
+	background: #0b1429;
+	color: white;
+	font-size: 16px;
+}
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 1200px){
+	#nav .main_nav{
+		margin-right: -100px;
+	}
+	#dropdown .news .article_line li ul p{
+		font-size: 11px;
+	}
+	#dropdown .news img{
+		width: 195px;
+		height: 109.69px;
+	}
+	#dropdown .news .article_line li ul{
+		width: 164px;
+	}
+	#news_sect .slider-cont a img{
+		top: 30px;
+		right: -390px;
+		height: 535px;
+		width: auto;
+	}
+	#news_sect .prev1 {
+    	position: absolute;
+   		width: 75px;
+    	z-index: 10;
+    	top: 268px;
+    	left: -100px;
+	}
+	#news_sect .next1 {
+    	position: absolute;
+   	 	width: 75px;
+    	z-index: 10;
+    	top: 268px;
+    	right: -470px;
+	}
+	#news_sect .slider-text a{
+		right: -345px;
+		top: 610px;
+	}
+	#teams .teams_rows ul li .content-logo img{
+		width: 173px;
+		height: auto;
+	}
+	#gallery .slider-cont{
+		height: 312px;
+	}
+	#gallery{
+		height: 426px;
+	}
+	#gallery .slider-cont a{
+		right: -500px;
+	}
+	#gallery .slider-cont a img{
+		height: 333px;
+	}
+	#shop .shop_row img{
+		width: 225px;
+	}
+	#shop .shop_row h5{
+		font-size: 15px;
+	} 
+	#shop .shop_row ul li{
+		margin-right: 25px;
+	}
+	#gallery .icon{
+		top: 360px;
+	}
+	#gallery .next2{
+		right: -100px;
+		width: 50px;
+		height: auto;
+	}
+	#gallery .prev2{
+		left: 920px;
+		width: 50px;
+		height: auto;
+	}
+	.cont-info{
+		top: 1905px;
+	}
+}
+@media only screen and (max-width: 1000px){
+	#nav .main_nav{
+		margin-right: -100px;
+	}
+	#nav .nav_img img{
+		width: 150px;
+		height: auto;
+	}
+	#nav .main_nav li ul a{
+		font-size: 15px;
+	}
+	#dropdown .news img{
+		width: 150px;
+		height: 84.38px;
+	}
+	#dropdown .news .article_line li ul p{
+		font-size: 8px;
+	}
+	#dropdown .news .article_line li ul{
+		width: 200px;
+		height: auto;
+		margin-right: -50px;
+		margin-bottom: 20px;
+		padding-top: 10px;
+	}
+	#news_sect .slider-cont a img{
+		top: 107px;
+    	right: -144px;
+    	height: 383px;
+    	width: auto;
+
+	}
+	#news_sect .prev1 {
+    	position: absolute;
+   		width: 75px;
+    	z-index: 10;
+    	top: 268px;
+    	left: -100px;
+	}
+	#news_sect .next1 {
+    	position: absolute;
+   	 	width: 75px;
+    	z-index: 10;
+    	top: 268px;
+    	right: -240px;
+	}
+	#news_sect .slider-text a{
+		right: -160px;
+    	top: 520px;
+	}
+	#teams .teams_rows ul li .content-logo img{
+		width: 112px;
+    	height: auto;
+	}
+	#teams .teams_rows ul li .content-logo h5{
+		font-size: 15px;
+	}
+	#teams .teams_rows_final {
+    	margin-left: 168px;
+	}
+	#teams .title h1 {
+    	padding-top: 10px;
+	}
+	#gallery{
+		height: 352px;
+	}
+	#gallery .slider-cont{
+		height: 231px;
+	}
+	#gallery .slider-cont a{
+		right: -271px;
+	}
+	#gallery .slider-cont a img{
+		height: 272px;
+	}
+	.cont-info{
+		width: 830px;
+	}
+	.cont-info .drivers img {
+		width: 354px;
+	}
+	#shop .shop_row img{
+		width: 185px;
+	}
+	#shop .shop_row h5{
+		font-size: 12px;
+	} 
+	#shop .shop_row p{
+		font-size: 12px;
+	}
+	#shop .shop_row ul li{
+		margin-right: 15px;
+	}
+	#gallery .icon{
+		top: 285px;
+	}
+	#gallery .next2{
+		right: -124px;
+		width: 50px;
+		height: auto;
+	}
+	#gallery .prev2{
+		left: 694px;
+		width: 50px;
+		height: auto;
+	}
+	.cont-info{
+		top: 1905px;
+	}
+}
